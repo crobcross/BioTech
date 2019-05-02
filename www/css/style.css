@@ -7,8 +7,14 @@
 }
 .razones {
 	color:#FFF;
+	padding-top: 50px;
+	font-size: 35px;
+	text-align: center;
 }
 .separador {
 	height: 100px;
 }
-/* toggle bottom*//
+video {
+	border:solid black 3px;
+}
+
