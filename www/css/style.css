@@ -1,20 +1,129 @@
-* {
-	margin: 0;
-	padding: 0;
-}
+
+
+
 .fondo1 {
-	background:rgba(78,122,178,3);
+	background-color: #172852;
 }
-.razones {
-	color:#FFF;
-	padding-top: 50px;
-	font-size: 35px;
+/*toggle bottom*/
+.card {
+	position: relative;
+	width: 600px;
+	height: 350px;
+	background:#262626;
+	overflow: hidden;
+}
+input, .toggle {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 20px;
+	right: 20px;
+	outline:  none;
+	z-index: 10; 
+}
+input {
+	opacity: 0;
+}
+.toggle {
+	pointer-events: none;
+	border-radius: 50%;
+	background: #FFF;
+	transition: 0.7s;
 	text-align: center;
+	line-height: 30px;
+	font-size: 36px;
+	color: #000;
+	box-shadow: 0 0 0 0px #DCDB97;
 }
-.separador {
-	height: 100px;
+/**ancho del color*/
+input:checked ~ .toggle {
+	box-shadow: 0 0 0 650px #DCDB97;
+	transform: rotate(250deg);
+
 }
-video {
-	border:solid black 3px;
+.imgBx,
+.details {
+	 position: absolute;
+	 top:0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+}
+img {
+	width: 100%;
+	height: 100%;
+}
+.details {
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 11;
+	pointer-events: none;	
+	opacity: 0;
+}
+input:checked ~ .details {
+	opacity: 0;
+	transition-delay: 3s;
+	transition: 4s;
+	opacity: 1;
+}
+.details h1 {
+	margin:0;
+	padding: 0;
+	color: #000;
+}
+/**texto*/
+div h1 {
+	text-transform: capitalize;
+	text-shadow: 1px 1px 2px ;
+}
+div p {
+	font-size: 20px;
+
+}
+/* estilos del reproductor*/
+.fm-video {
+	width: 100%;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,.5);
+}
+
+.fm-video .vjs-control-bar {
+	background: #F4F4F4;
+	color: #2d5f85;
+}
+
+.fm-video .vjs-play-progress,
+.fm-video .vjs-volume-level {
+	background: #1d87d8;
+}
+
+.fm-video .vjs-slider {
+	background: #2d5f85;
+}
+
+.video-js:hover .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+}
+
+.fm-video .vjs-big-play-button {
+	background: rgba(0,0,0,.2);
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	border-radius: 100%;
+	border:none;
+}
+
+.fm-video .vjs-big-play-button:hover {
+	background: rgba(0,0,0,.5);
+}
+@media screen and (max-width: 600px) {
+	header {
+		position: relative;
+		height: auto;
+	}
+
+	main {
+		margin-top: 50px;
+	}
 }
 
