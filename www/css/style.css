@@ -3,12 +3,13 @@
 
 .fondo1 {
 	background-color: #172852;
+	
 }
 /*toggle bottom*/
 .card {
 	position: relative;
-	width: 600px;
-	height: 350px;
+	width: 650px;
+	height: 375px;
 	background:#262626;
 	overflow: hidden;
 }
@@ -33,11 +34,11 @@ input {
 	line-height: 30px;
 	font-size: 36px;
 	color: #000;
-	box-shadow: 0 0 0 0px #DCDB97;
+	box-shadow: 0 0 0 0px #4DB8AA ;
 }
 /**ancho del color*/
 input:checked ~ .toggle {
-	box-shadow: 0 0 0 650px #DCDB97;
+	box-shadow: 0 0 0 650px #45D4C0  ;
 	transform: rotate(250deg);
 
 }
