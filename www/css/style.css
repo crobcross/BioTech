@@ -8,8 +8,8 @@
 /*toggle bottom*/
 .card {
 	position: relative;
-	width: 650px;
-	height: 375px;
+	width: 600px;
+	height: 350px;
 	background:#262626;
 	overflow: hidden;
 }
@@ -128,3 +128,12 @@ div p {
 	}
 }
 
+/*ADN 3D*/
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+background-color: #DABDD8;
+}
