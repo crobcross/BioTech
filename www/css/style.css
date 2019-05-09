@@ -5,10 +5,14 @@
 video {
   width: 650px;
   height: 325px;
- 
+  box-shadow: 1px 1px 1px #000
+}
+.centro {
+  text-align: center;
 }
 /*toggle bottom*/
 .card {
+  left: 30%;
   position: relative; 
   width: 500px;
   height: 300px;
@@ -45,8 +49,8 @@ input:checked ~ .toggle {
 
 }
 .imgBx,
-.details {
-   position: absolute;
+.details { 
+   position: relative;
    top:0;
    left: 0;
    width: 100%;
@@ -83,9 +87,15 @@ div p {
   font-size: 20px;
 
 }
-
-@media screen and (max-width: 800px) {
- .card {
+.contenedor {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+ 
+ .fond1 {
+  background:#02779c; 
+ }
+ .contenedor {
   width: 100%;
  }
  video {
