@@ -2,6 +2,10 @@
    background: linear-gradient(135deg, #1B5A8C, #09273E);
  
 }
+.encabezado {
+  height:40px;
+  background: #FFF;
+}
 .fm-video {
   margin-left: 34%;
   width: 650px;
