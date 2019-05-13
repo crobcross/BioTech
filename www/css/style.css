@@ -1,8 +1,9 @@
 .fondo1 {
-  background-color: #172852;
-  
+   background: linear-gradient(135deg, #1B5A8C, #09273E);
+ 
 }
-video {
+.fm-video {
+  margin-left: 34%;
   width: 650px;
   height: 325px;
   box-shadow: 1px 1px 1px #000
@@ -12,9 +13,9 @@ video {
 }
 /*toggle bottom*/
 .card {
-  left: 30%;
+  margin-left: 35%;
   position: relative; 
-  width: 500px;
+  width: 600px;
   height: 300px;
   background:#262626;
   overflow: hidden;
@@ -49,8 +50,8 @@ input:checked ~ .toggle {
 
 }
 .imgBx,
-.details { 
-   position: relative;
+.details {
+   position: absolute;
    top:0;
    left: 0;
    width: 100%;
@@ -87,21 +88,51 @@ div p {
   font-size: 20px;
 
 }
+
 .contenedor {
-  width: 100%;
+  width:80%;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
  
  .fond1 {
-  background:#02779c; 
+background: linear-gradient(135deg, #3F698A, #081E2F);
  }
  .contenedor {
-  width: 100%;
+  width:100%;
  }
- video {
+ .fm-video {
+  width:100%;
+  height: 250px;
+  margin: 1%;
+ }
+ .card {
   width: 100%;
+  margin:1%;
+  height: 350px;
  }
 }
+.fondoC {
+  background: #000;
+  height: 560px;
+}
+@media screen and (max-width: 500px) {
+ 
+ .fond1 {
+   background: linear-gradient(135deg, #60B0EE, #478FC6);
+ }
+ .contenedor {
+  width:100%;
+ }
+ .fm-video {
+  width: 100%;
+  margin-left: 0;
+ }
+ .card {
+  width: 100%;
+  margin-left: 0;
+ }
+}
+
 
 /*ADN 3D*/
 .fondoadn {
