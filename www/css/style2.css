@@ -1,4 +1,83 @@
 .fondoanti {
 	background-image: url("../img/fondoxd.jpg");
-	height: 800px;
+	 background-repeat: no-repeat;
+    background-size: cover;
+	height: 600px;
+}
+
+.row {
+	height: 33%;
+}
+h2,h3,h4,h5,h6, p{
+	
+	font-family: Bookman_Old_Style
+}
+.col h1 {
+	color: #FFF;
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: Bookman_Old_Style
+
+}
+.container2 {
+	background-color: #FFF;
+	height: 450px;
+}
+.imga {
+	width: 300px;
+	height: 150px;
+	margin-left: 25%;
+}
+.tm {
+	color: #474747;
+	font-size: 28px;
+	font-family: Bookman_Old_Style
+}
+.pm {
+	color: #6E6E6E;
+	font-size: 17px;
+	text-align: justify;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.th {
+	color: #474747;
+	font-size: 28px;
+	font-family: Bookman_Old_Style
+}
+.ph {
+	color: #6E6E6E;
+	font-size: 17px;
+	text-align: justify;
+	padding-left: 6%;
+	padding-right: 6%;
+}
+img {
+	transition: all .7s ease
+}
+img:hover {
+	transform: scale(.9);	
+}
+.container3 {
+	background: #1A324A;
+	height: 500px;
+}
+
+.a {
+	top: 10%;
+	left: 5%;
+}
+.a p {
+	font-size: 30px;
+	color: #000;
+}
+.as {
+	visibility: hidden;
+}
+.a:checked ~ .as {
+	visibility: visible;
+}
+@media screen and (max-width:1000px){
+
 }
