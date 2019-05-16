@@ -24,11 +24,12 @@
   padding-left: 30%;
 
 }
-video {
-  margin-left: 30%;
-  width: 650px;
-  height: 325px;
-  box-shadow: 1px 1px 1px #000
+iframe {
+  
+  width: 700px;
+  height: 400px;
+  margin-left: 27%;
+  box-shadow: 2px 2px 2px #000
 }
 .centro {
   text-align: center;
@@ -79,7 +80,7 @@ input:checked ~ .toggle {
    width: 100%;
    height: 100%;
 }
-img {
+.imgBx img {
   width: 100%;
   height: 100%;
 }

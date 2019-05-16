@@ -5,13 +5,6 @@
 	height: 600px;
 }
 
-.row {
-	height: 33%;
-}
-h2,h3,h4,h5,h6, p{
-	
-	font-family: Bookman_Old_Style
-}
 .col h1 {
 	color: #FFF;
 	font-size: 50px;
@@ -53,10 +46,10 @@ h2,h3,h4,h5,h6, p{
 	padding-left: 6%;
 	padding-right: 6%;
 }
-img {
+.container2 img {
 	transition: all .7s ease
 }
-img:hover {
+.container2 img:hover {
 	transform: scale(.9);	
 }
 .container3 {
@@ -72,12 +65,39 @@ img:hover {
 	font-size: 30px;
 	color: #000;
 }
-.as {
-	visibility: hidden;
+@media screen and (max-width:548px){
+	.container2 {
+		height:925px; 
+	}	
+	.imga {
+		margin: 0;
+		width: 70%;
+		margin-left: 12%;
+	}
 }
-.a:checked ~ .as {
-	visibility: visible;
-}
-@media screen and (max-width:1000px){
 
+.diseñoboton {
+	background: ;
+	border: none;
+}
+.container3 p {
+	transform: translate(-50,-50);
+	color: #1670f0;
+	padding: 10px 10px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	box-shadow: 0 20px 50px rgba(0,0,0, .5)	
+}
+. p:before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(255,255,255,.05);
+}
+button:hover {
+	background:rgba(55,98,146,.05);
 }
