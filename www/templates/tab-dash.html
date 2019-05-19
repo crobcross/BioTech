@@ -2,7 +2,61 @@
   <ion-content class="fondo1 fond1" class="padding"><br>
     <div class="encabezado"><p class="titlewater">importancia del agua</p></div>
   <br>
-  <div class="contenedor"><br><br><br>
+   <div class="fondomenu">
+    <nav class="menu">
+    <header>Menu <span>×</span></header>
+    <ol>
+        <li class="menu-item"><a href="#agua">Importancia del Agua</a></li>
+        <li class="menu-item"><a href="#0">Tabla nutricional</a></li>
+        <li class="menu-item">
+            <a href="#0">ADN</a>
+            <ol class="sub-menu">
+                <li class="menu-item"><a href="#0">Evitar Embarazos</a></li>
+                <li class="menu-item"><a href="#0">Metodos Anticonceptivos</a></li>
+            </ol>
+        </li>
+    <footer><button aria-label="Toggle Menu">Toggle</button></footer>
+</nav>
+<script>
+    
+   var $els = $('.menu a, .menu header');
+var count = $els.length;
+var grouplength = Math.ceil(count/3);
+var groupNumber = 0;
+var i = 1;
+$('.menu').css('--count',count+'');
+$els.each(function(j){
+    if ( i > grouplength ) {
+        groupNumber++;
+        i=1;
+    }
+    $(this).attr('data-group',groupNumber);
+    i++;
+});
+
+$('.menu footer button').on('click',function(e){
+    e.preventDefault();
+    $els.each(function(j){
+        $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
+        $(this).css('--delay-in',j*.1+'s');
+        $(this).css('--delay-out',(count-j)*.1+'s');
+    });
+    $('.menu').toggleClass('closed');
+    e.stopPropagation();
+});
+
+// run animation once at beginning for demo
+setTimeout(function(){
+    $('.menu footer button').click();
+    setTimeout(function(){
+        $('.menu footer button').click();
+    }, (count * 100) + 500 );
+}, 1000);
+ 
+    
+</script> 
+</div>
+  <div id=""class="contenedor"><br><br><br>
   	<div class="row responsive-sm xs centro">
   		<div class="col col-center">
   	<iframe  class=""width="600" height="400" src="https://www.youtube.com/embed/NSdmmkNiqgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -21,6 +75,72 @@
     </div>
   </div>
 </div>
+</div>
+<div class="containertabla">
+  <h1 class="letra1 borde">Tabla Nutricional Para Los Jovenes</h1>
+    <table>
+    <thead class="letra">
+    <tr>
+      <th class="centrado">Alimentos</th>
+      <th class="centrado">Azucar</th>
+      <th class="centrado">Carbohidratos</th>
+      <th class="centrado">Calorias</th>
+      <th class="centrado">Proteinas</th>
+      <th class="centrado">Cantidad por 100g</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="letra3">
+      <td class="centrado">Agua</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    <tr class="letra3">
+      <td class="centrado">Carnes</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">0g</td>
+      <td class="centrado">143</td>
+      <td class="centrado">26g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    <tr class="letra3">
+      <td class="centrado">Frutas</td>
+      <td class="centrado">0.7g</td>
+      <td class="centrado">9g</td>
+      <td class="centrado">160</td>
+      <td class="centrado">2g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    <tr class="letra3">
+      <td class="centrado">Verduras</td>
+      <td class="centrado">3.1g</td>
+      <td class="centrado">13g</td>
+      <td class="centrado">65</td>
+      <td class="centrado">2.9g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    <tr class="letra3">
+      <td class="centrado">Legubres</td>
+      <td class="centrado">6g</td>
+      <td class="centrado">14g</td>
+      <td class="centrado">81</td>
+      <td class="centrado">5g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    <tr class="letra3">
+      <td class="centrado">Lacteos</td>
+      <td class="centrado">5g</td>
+      <td class="centrado">5g</td>
+      <td class="centrado">46</td>
+      <td class="centrado">1.6g</td>
+      <td class="centrado">Cantidad por 100g</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
   </ion-content>
 </ion-view> 

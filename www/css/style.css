@@ -131,7 +131,7 @@ background: linear-gradient(135deg, #3F698A, #081E2F);
  .waterbody {
   padding-left: 0;
  }
- video {
+ iframe {
   width:100%;
   height: 250px;
   margin: 1%;
@@ -162,7 +162,7 @@ background: linear-gradient(135deg, #3F698A, #081E2F);
  .waterbody {
   padding-left: 0;
  }
- video {
+  iframe {
   width: 100%;
   margin-left: 0;
  }
@@ -214,100 +214,7 @@ canvas {
   text-align: left;
 }
 
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-  }
-  /* Zebra striping */
-  tr:nth-of-type(odd) { 
-    background: #a29f9f91; 
-  }
-  th { 
-    background:; 
-    color: white; 
-    font-weight: bold; 
-  }
-  td, th { 
-    padding: 6px; 
-    border: solid #303030 1px; 
-    text-align: left; 
-  }
-
-
-  /*
-  Max width before this PARTICULAR table gets nasty
-  This query will take effect for any screen smaller than 760px
-  and also iPads specifically.
-  */
-  @media
-  only screen and (max-width: 760px),
-  (min-device-width: 768px) and (max-device-width: 1024px)  {
-
-    /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr {
-      display: block;
-    }
-
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-
-    tr { border: solid red 1px; }
-
-    td {
-      /* Behave  like a "row" */
-      border: none;
-      border-bottom: solid red 1px;
-      position: relative;
-      padding-left: 50%;
-    }
-
-    td:before {
-      /* Now like a table header */
-      position: relative;
-      /* Top/left values mimic padding */
-      top: 0px;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
-    }
-
-    /*
-    Label the data
-    */
-    td:nth-of-type(1) { font-weight:bold;font-size:150%;margin-top:5px; }
-    td:nth-of-type(1):before { content: ""; }
-    td:nth-of-type(2):before { content: ""; }
-    td:nth-of-type(3):before { content: ""; }
-    td:nth-of-type(4):before { content: ""; }
-    td:nth-of-type(5):before { content: ""; }
-    td:nth-of-type(6):before { content: ""; }
-    td:nth-of-type(7):before { content: ""; }
-    td:nth-of-type(8):before { content: ""; }
-    td:nth-of-type(9):before { content: ""; }
-    td:nth-of-type(10):before { content: ""; }
-  }
-
-  /* Smartphones (portrait and landscape) ----------- */
-  @media only screen
-  and (min-device-width : 320px)
-  and (max-device-width : 480px) {
-    body {
-      padding: 0;
-      margin: 0;
-      width: 320px; }
-    }
-
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    body {
-      width: 475px;
-    }
-  }
+/*tabla*/
 
 /*ADN 3D*/
 .fondoadn {
@@ -452,4 +359,93 @@ body {
 }
 body {
   background: linear-gradient(135deg, #160C23, #7B6762);
+}
+
+nav {
+  --duration: .5s;
+  --easing: ease-in-out;
+  position: relative;
+  width: 220px;
+  margin: 20px;
+}
+nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: -4px 0 0 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  background: #223D52;
+  color: #90A6EE ; 
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+nav a:hover {
+  background: #efefef;
+}
+nav .sub-menu a {
+  font-size: 15px;
+  color: #D3D3D5  ;
+  border-left: 2em solid #223D52;
+  padding: .75em;
+  background: #223D52;
+}
+nav .sub-menu a:hover {
+  background: linear-gradient(to right, #dddddd 2px, #efefef 2px);
+}
+nav header {
+  font-weight: 600;
+  font-size: 17px;
+  color: #FFF;
+  display: block;
+  background: #1A2B43;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+nav header span {
+  border: none;
+  background: transparent;
+  font-size: 1.5em;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  float: right;
+}
+nav footer button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: calc(1em - 2px);
+  width: 100%;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing);
+  transition-delay: calc(var(--duration) + (.1s * (var(--count) / 2)));
+  cursor: pointer;
+  outline: none;
+  background: #cdcdcd;
+  opacity: 0;
+}
+nav.closed a,
+nav.closed header {
+  transform: translateY(calc(var(--top) * -1)) scaleY(0.1) scaleX(0.2);
+  transition-delay: var(--delay-in);
+  color: transparent;
+}
+nav.closed footer button {
+  transition-delay: 0s;
+  transform: scaleY(0.7) scaleX(0.2);
+}
+.menu {
+  background: transparent;
 }

@@ -1,9 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, Dash) {
-    var reproductor = videojs('fm-video', {
-      fluid: true
-    });
+
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -55,4 +53,5 @@ boton.addEventListener('click', function(){
   }
   
 })
+
 });

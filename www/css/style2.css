@@ -92,7 +92,10 @@
 	padding-top: 3%;
 	margin-left: 25%;
 	}
-
+	.boton {
+		margin-top: 63%;
+		margin-left: 13%;
+	}
 }
 @media screen and (max-width:600px){
 	.container2 {
@@ -138,7 +141,7 @@
   border: solid #000;
   border-radius:5%;
   position: absolute;
-  top: 40%;
+  top: 43%;
   left: 12%;
   transform: translate(-50%,-50%);
   width: 230px;
@@ -189,3 +192,4 @@
 	margin-left: 35%;
 	box-shadow: 3px 3px 3px rgba(81,81,86, .5) 
 }
+/*menu shido*/
