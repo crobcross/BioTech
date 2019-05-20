@@ -16,31 +16,26 @@
 }
 .container2 {
 	background-color: #FFF;
-	height: 450px;
+	height: 500px;
 }
 .imga {
 	width: 300px;
 	height: 150px;
-	margin-left: 25%;
+	
 }
-.tm {
-	color: #474747;
-	font-size: 28px;
-	font-family: Bookman_Old_Style
+.imgd {
+	width: 500px;
+	height: 300px;
+	margin-left: 15%
 }
-.pm {
-	color: #6E6E6E;
-	font-size: 17px;
-	text-align: justify;
-	padding-left: 5%;
-	padding-right: 5%;
+.tprevenir{
+	color: #303030;
+	font-size: 24px;
+	text-align: center;
+	padding-left: 8%;
+	padding-right: 8%;
 }
-.th {
-	color: #474747;
-	font-size: 28px;
-	font-family: Bookman_Old_Style
-}
-.ph {
+.Pprevenir {
 	color: #6E6E6E;
 	font-size: 17px;
 	text-align: justify;
@@ -93,8 +88,13 @@
 	margin-left: 25%;
 	}
 	.boton {
-		margin-top: 63%;
+		margin-top: 58%;
 		margin-left: 13%;
+	}
+	.imgd {
+		margin: 0;
+		width: 95%;
+		margin-right: 20px;
 	}
 }
 @media screen and (max-width:600px){
@@ -117,7 +117,11 @@
 	padding-top: 3%;
 	margin-left: 25%;
 	}
-
+	.imgd {
+		margin: 0;
+		width: 95%;
+		margin-right: 20px;
+	}
 }
 
 /*mostrar js*/
@@ -141,7 +145,7 @@
   border: solid #000;
   border-radius:5%;
   position: absolute;
-  top: 43%;
+  top: 45%;
   left: 12%;
   transform: translate(-50%,-50%);
   width: 230px;
@@ -153,6 +157,7 @@
 }
 .boton:hover{
 	color: #FFF;
+	transition:2s; 
 	background: #0C2A42
 }
 .condot {
