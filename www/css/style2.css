@@ -56,7 +56,7 @@
 }
 .container3 {
 	background: #1A324A;
-	height: 1500px;
+	height: 2700px;
 }
 
 .a {
@@ -69,7 +69,7 @@
 }
 @media screen and (max-width:800px){
 	.container2 {
-		height:700px; 
+		height:1000px; 
 	}	
 	.imga {
 		margin: 0;
@@ -88,7 +88,7 @@
 	margin-left: 25%;
 	}
 	.boton {
-		margin-top: 58%;
+		top: 50%;
 		margin-left: 13%;
 	}
 	.imgd {
@@ -96,6 +96,9 @@
 		width: 95%;
 		margin-right: 20px;
 	}
+	.container2 {
+		height:1500px; 
+	}	
 }
 @media screen and (max-width:600px){
 	.container2 {
@@ -122,6 +125,10 @@
 		width: 95%;
 		margin-right: 20px;
 	}
+	.boton {
+		margin-top: 63%;
+		margin-left: 13%;
+	}
 }
 
 /*mostrar js*/
@@ -133,9 +140,6 @@
   padding:10px;
   font-size: 18px;
 }
-.Diferentes {
-
-}
 .oculto{
   display: none;
 }
@@ -145,7 +149,7 @@
   border: solid #000;
   border-radius:5%;
   position: absolute;
-  top: 37%;
+  top: 27%;
   left: 12%;
   transform: translate(-50%,-50%);
   width: 230px;
@@ -157,7 +161,7 @@
 }
 .boton:hover{
 	color: #FFF;
-	transition:2s; 
+	transition:1s; 
 	background: #0C2A42
 }
 .condot {
@@ -201,8 +205,7 @@
 .contenedorgame {
 	background: #000;
 	height: 600px;
-	margin: 0;
-	padding: 0;
+	
 }
 .memoriaanti {
 	color: #FFF;
